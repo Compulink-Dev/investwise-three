@@ -18,7 +18,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-zinc-900 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -27,32 +27,32 @@ const Footer = () => {
             <h3 className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               InvestWise
             </h3>
-            <p className="text-slate-300 text-sm">
+            <p className="text-zinc-300 text-sm">
               Empowering investors with knowledge, tools, and resources to make
               informed financial decisions and build wealth responsibly.
             </p>
             <div className="flex space-x-4 pt-2">
               <a
                 href="#"
-                className="p-2 bg-slate-800 rounded-full hover:bg-yellow-600 transition-colors"
+                className="p-2 bg-zinc-800 rounded-full hover:bg-yellow-600 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="p-2 bg-slate-800 rounded-full hover:bg-yellow-600 transition-colors"
+                className="p-2 bg-zinc-800 rounded-full hover:bg-yellow-600 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="p-2 bg-slate-800 rounded-full hover:bg-yellow-600 transition-colors"
+                className="p-2 bg-zinc-800 rounded-full hover:bg-yellow-600 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="p-2 bg-slate-800 rounded-full hover:bg-yellow-600 transition-colors"
+                className="p-2 bg-zinc-800 rounded-full hover:bg-yellow-600 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -65,7 +65,7 @@ const Footer = () => {
               <BookOpen className="h-5 w-5 mr-2 text-yellow-400" />
               Resources
             </h4>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2 text-zinc-300">
               <li>
                 <Link
                   href="/investment-basics"
@@ -120,7 +120,7 @@ const Footer = () => {
               <Users className="h-5 w-5 mr-2 text-yellow-400" />
               Learn & Play
             </h4>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2 text-zinc-300">
               <li>
                 <Link
                   href="/capital-market-basic-knowledge-quiz"
@@ -175,7 +175,7 @@ const Footer = () => {
               <Shield className="h-5 w-5 mr-2 text-yellow-400" />
               Get In Touch
             </h4>
-            <div className="space-y-3 text-slate-300">
+            <div className="space-y-3 text-zinc-300">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-yellow-400 flex-shrink-0" />
                 <span>
@@ -199,7 +199,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="px-3 py-2 bg-slate-800 text-white rounded-l-md focus:outline-none focus:ring-2 focus:ring-yellow-500 w-full"
+                  className="px-3 py-2 bg-zinc-800 text-white rounded-l-md focus:outline-none focus:ring-2 focus:ring-yellow-500 w-full"
                 />
                 <button className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 rounded-r-md transition-colors">
                   Subscribe
@@ -211,29 +211,29 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-slate-800">
+      <div className="border-t border-zinc-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400 text-sm flex items-center">
+            <p className="text-zinc-400 text-sm flex items-center">
               <Heart className="h-4 w-4 mr-1 text-red-500" />©{" "}
               {new Date().getFullYear()} InvestWise. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="/privacy-policy"
-                className="text-slate-400 hover:text-yellow-400 text-sm transition-colors"
+                className="text-zinc-400 hover:text-yellow-400 text-sm transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms-of-service"
-                className="text-slate-400 hover:text-yellow-400 text-sm transition-colors"
+                className="text-zinc-400 hover:text-yellow-400 text-sm transition-colors"
               >
                 Terms of Service
               </Link>
               <Link
                 href="/disclaimer"
-                className="text-slate-400 hover:text-yellow-400 text-sm transition-colors"
+                className="text-zinc-400 hover:text-yellow-400 text-sm transition-colors"
               >
                 Disclaimer
               </Link>
@@ -243,9 +243,9 @@ const Footer = () => {
       </div>
 
       {/* Regulatory Notice */}
-      <div className="bg-slate-950 py-4">
+      <div className="bg-zinc-950 py-4">
         <div className="container mx-auto px-4">
-          <p className="text-slate-500 text-xs text-center">
+          <p className="text-zinc-500 text-xs text-center">
             InvestWise is an educational platform. We are not financial
             advisors. All investments carry risk, and it is important you
             understand these risks before investing. Past performance is not

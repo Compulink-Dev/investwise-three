@@ -1,19 +1,19 @@
-import About from "@/components/AboutSection";
-import CTA from "@/components/CTA";
+import { AboutSection } from "@/components/AboutSection";
+import { CTASection } from "@/components/CTA";
 import { HeroSection } from "@/components/HeroSection";
-import InvestmentProducts from "@/components/InvetsmentProducts";
-import Process from "@/components/ProcessSection";
-import Testimonials from "@/components/Testimonials";
+import { InvestmentProducts } from "@/components/InvetsmentProducts";
+import { ProcessSection } from "@/components/ProcessSection";
+import { TestimonialsSection } from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <About />
+      <AboutSection />
       <InvestmentProducts />
-      <Process />
-      <Testimonials />
-      <CTA />
+      <ProcessSection />
+      <TestimonialsSection />
+      <CTASection />
     </main>
   );
 }
