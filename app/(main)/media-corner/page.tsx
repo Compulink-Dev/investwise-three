@@ -45,21 +45,35 @@ export default function MediaCenter() {
   const categories = [
     { id: "all", label: "All Media", icon: <Newspaper className="h-4 w-4" /> },
     {
-      id: "press",
-      label: "Press Releases",
+      id: "videos",
+      label: "Video Gallery",
+      icon: <Video className="h-4 w-4" />,
+    },
+    {
+      id: "photos",
+      label: "Photo Gallery",
+      icon: <Image className="h-4 w-4" />,
+    },
+    {
+      id: "procurement",
+      label: "Procurement",
       icon: <FileText className="h-4 w-4" />,
     },
     {
+      id: "surveys",
+      label: "Surveys",
+      icon: <BarChart3 className="h-4 w-4" />,
+    },
+    { id: "speeches", label: "Speeches", icon: <Mic className="h-4 w-4" /> },
+    {
       id: "news",
-      label: "News Articles",
+      label: "News & Events",
       icon: <Newspaper className="h-4 w-4" />,
     },
-    { id: "images", label: "Images", icon: <Image className="h-4 w-4" /> },
-    { id: "videos", label: "Videos", icon: <Video className="h-4 w-4" /> },
     {
-      id: "reports",
-      label: "Reports",
-      icon: <BarChart3 className="h-4 w-4" />,
+      id: "calendar",
+      label: "Board Calendar",
+      icon: <Calendar className="h-4 w-4" />,
     },
   ];
 
@@ -67,101 +81,79 @@ export default function MediaCenter() {
   const mediaItems = [
     {
       id: 1,
-      title: "Q4 2023 Financial Results Announcement",
-      type: "press",
-      date: "2024-01-25",
+      title: "2024 Annual Procurement Plan",
+      type: "procurement",
+      date: "2024-02-01",
       description:
-        "InvestWise Zimbabwe announces strong financial results for the fourth quarter of 2023, with a 15% increase in assets under management.",
+        "Download the official procurement plan and tender opportunities for 2024.",
       image: "/placeholder-image.jpg",
-      downloads: [
-        { name: "Full Report (PDF)", url: "#", size: "2.4MB" },
-        { name: "Press Release", url: "#", size: "1.2MB" },
-      ],
-      tags: ["Financials", "Earnings", "Quarterly Results"],
+      downloads: [{ name: "Full Plan (PDF)", url: "#", size: "3.2MB" }],
+      tags: ["Procurement", "Tenders"],
     },
     {
       id: 2,
-      title: "New Investment Products Launch",
-      type: "news",
-      date: "2024-01-18",
+      title: "Survey: Financial Literacy in Zimbabwe",
+      type: "surveys",
+      date: "2024-01-20",
       description:
-        "InvestWise introduces three new investment products designed specifically for the Zimbabwean market, offering diversified opportunities for investors.",
+        "Participate in our financial literacy survey and help shape future initiatives.",
       image: "/placeholder-image.jpg",
-      downloads: [{ name: "Product Brochure", url: "#", size: "3.1MB" }],
-      tags: ["Products", "Innovation", "Market Expansion"],
+      externalLink: "https://example.com/survey-link",
+      tags: ["Survey", "Research"],
     },
     {
       id: 3,
-      title: "Market Analysis: Zimbabwe Economic Outlook 2024",
-      type: "reports",
-      date: "2024-01-10",
+      title: "Chairperson’s Speech – 2023 AGM",
+      type: "speeches",
+      date: "2023-12-15",
       description:
-        "Comprehensive analysis of Zimbabwe's economic prospects for 2024, with sector-specific insights and investment recommendations.",
+        "Full speech delivered by the Board Chairperson during the Annual General Meeting.",
       image: "/placeholder-image.jpg",
-      downloads: [
-        { name: "Full Report", url: "#", size: "5.7MB" },
-        { name: "Executive Summary", url: "#", size: "1.8MB" },
-      ],
-      tags: ["Research", "Economic Outlook", "Market Analysis"],
+      downloads: [{ name: "Speech Transcript", url: "#", size: "1.1MB" }],
+      tags: ["Speech", "AGM"],
     },
     {
       id: 4,
-      title: "CEO Interview on Business Focus",
-      type: "videos",
-      date: "2024-01-05",
+      title: "Board Calendar – 2024",
+      type: "calendar",
+      date: "2023-12-10",
       description:
-        "Our CEO discusses investment opportunities in Zimbabwe and the company's growth strategy in an exclusive television interview.",
+        "Schedule of Board meetings and strategic sessions for 2024.",
       image: "/placeholder-image.jpg",
-      videoUrl: "#",
-      duration: "15:42",
-      tags: ["Leadership", "Interview", "Strategy"],
+      downloads: [{ name: "Board Calendar (PDF)", url: "#", size: "800KB" }],
+      tags: ["Board", "Calendar"],
     },
     {
       id: 5,
-      title: "Corporate Responsibility Initiative Launch",
-      type: "press",
-      date: "2023-12-15",
+      title: "Highlights from Women in Finance Conference",
+      type: "news",
+      date: "2024-01-05",
       description:
-        "InvestWise launches a new financial literacy program aimed at empowering youth in underserved communities across Zimbabwe.",
+        "Event recap and key takeaways from the annual Women in Finance conference.",
       image: "/placeholder-image.jpg",
-      downloads: [
-        { name: "Press Release", url: "#", size: "1.5MB" },
-        { name: "Program Overview", url: "#", size: "2.2MB" },
-      ],
-      tags: ["CSR", "Education", "Community"],
+      tags: ["Event", "Conference"],
     },
     {
       id: 6,
-      title: "Company Headquarters Gallery",
-      type: "images",
-      date: "2023-12-10",
+      title: "Launch of Investor Education Campaign",
+      type: "videos",
+      date: "2024-01-03",
       description:
-        "High-resolution images of our new headquarters in Harare, featuring state-of-the-art facilities and sustainable design elements.",
+        "Watch the highlights of our nationwide financial literacy campaign launch.",
       image: "/placeholder-image.jpg",
-      downloads: [{ name: "Image Pack (ZIP)", url: "#", size: "18.3MB" }],
-      tags: ["Facilities", "Corporate", "Architecture"],
+      videoUrl: "#",
+      duration: "12:40",
+      tags: ["Video", "Education"],
     },
     {
       id: 7,
-      title: "VFEX Investment Opportunities Report",
-      type: "reports",
-      date: "2023-11-28",
-      description:
-        "Detailed analysis of investment opportunities on the Victoria Falls Stock Exchange for international investors.",
+      title: "Corporate Headquarters Photo Collection",
+      type: "photos",
+      date: "2023-12-22",
+      description: "High-resolution images of our headquarters and facilities.",
       image: "/placeholder-image.jpg",
-      downloads: [{ name: "Full Report", url: "#", size: "4.2MB" }],
-      tags: ["VFEX", "International", "Analysis"],
-    },
-    {
-      id: 8,
-      title: "Women in Finance Initiative",
-      type: "news",
-      date: "2023-11-15",
-      description:
-        "InvestWise launches program to support and promote women in Zimbabwe's financial services industry.",
-      image: "/placeholder-image.jpg",
-      downloads: [{ name: "Initiative Overview", url: "#", size: "2.1MB" }],
-      tags: ["Diversity", "Women", "Empowerment"],
+      downloads: [{ name: "Image Pack (ZIP)", url: "#", size: "20MB" }],
+      tags: ["Photos", "Corporate"],
     },
   ];
 
@@ -246,7 +238,7 @@ export default function MediaCenter() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Header */}
-      <header className="bg-gradient-to-r from-yellow-600 to-amber-700 text-white py-16">
+      <header className="bg-gradient-to-r from-primary to-primary/50 text-white py-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -256,21 +248,21 @@ export default function MediaCenter() {
           >
             <Badge
               variant="secondary"
-              className="mb-4 bg-white/20 text-white border-none"
+              className="mb-4 bg-primary/20 text-white border-none"
             >
               Media Resources
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Media Center
             </h1>
-            <p className="text-xl text-yellow-100 mb-8">
+            <p className="text-xl text-primary-100 mb-8">
               Access press releases, news, multimedia content, and resources for
               journalists covering InvestWise Zimbabwe.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="bg-white text-yellow-700 hover:bg-yellow-50"
+                className="bg-white text-primary hover:bg-primary-50"
               >
                 Media Resources <Download className="ml-2 h-5 w-5" />
               </Button>
@@ -314,7 +306,7 @@ export default function MediaCenter() {
               </span>
               <Tabs
                 defaultValue="all"
-                className="w-full"
+                className="w-full h-full py-4 "
                 onValueChange={setActiveCategory}
               >
                 <TabsList className="grid grid-cols-3 md:grid-cols-6 gap-2">
@@ -394,7 +386,7 @@ export default function MediaCenter() {
                           {new Date(item.date).toLocaleDateString()}
                         </span>
                       </div>
-                      <CardTitle className="text-lg group-hover:text-yellow-600 transition-colors">
+                      <CardTitle className="text-lg group-hover:text-primary transition-colors">
                         {item.title}
                       </CardTitle>
                     </CardHeader>
@@ -464,7 +456,7 @@ export default function MediaCenter() {
                         <Mail className="h-4 w-4 mr-2 text-slate-500" />
                         <a
                           href={`mailto:${contact.email}`}
-                          className="text-yellow-600 hover:underline"
+                          className="text-primary hover:underline"
                         >
                           {contact.email}
                         </a>
@@ -473,7 +465,7 @@ export default function MediaCenter() {
                         <Phone className="h-4 w-4 mr-2 text-slate-500" />
                         <a
                           href={`tel:${contact.phone}`}
-                          className="text-yellow-600 hover:underline"
+                          className="text-primary hover:underline"
                         >
                           {contact.phone}
                         </a>
@@ -504,10 +496,7 @@ export default function MediaCenter() {
                       </span>
                     </div>
                     <h3 className="font-semibold mb-2">{mention.title}</h3>
-                    <Button
-                      variant="link"
-                      className="p-0 h-auto text-yellow-600"
-                    >
+                    <Button variant="link" className="p-0 h-auto text-primary">
                       Read article <ArrowRight className="h-4 w-4 ml-1" />
                     </Button>
                   </CardContent>
@@ -529,8 +518,8 @@ export default function MediaCenter() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto bg-yellow-100 p-3 rounded-full w-fit">
-                  <BookOpen className="h-8 w-8 text-yellow-600" />
+                <div className="mx-auto bg-primary-100 p-3 rounded-full w-fit">
+                  <BookOpen className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle>Company Profile</CardTitle>
               </CardHeader>

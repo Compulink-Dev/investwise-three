@@ -233,7 +233,7 @@ export default function InvestmentProducts() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       {/* Hero Section */}
-      <section className="pt-28 pb-20 px-4 md:px-6 bg-gradient-to-r from-yellow-600 to-amber-700 text-white">
+      <section className="pt-28 pb-20 px-4 md:px-6 bg-gradient-to-r from-primary to-primary/50 text-white">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -250,7 +250,7 @@ export default function InvestmentProducts() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Investment Products
             </h1>
-            <p className="text-xl text-yellow-100 mb-8">
+            <p className="text-xl text-zinc-900 mb-8">
               Discover a wide range of investment opportunities tailored for the
               Zimbabwean market. Whether you're a conservative investor or
               seeking high growth, we have options for you.
@@ -258,7 +258,7 @@ export default function InvestmentProducts() {
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="bg-white text-yellow-700 hover:bg-yellow-50"
+                className="bg-white text-primary hover:bg-primary/50"
               >
                 Explore Products <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -285,8 +285,8 @@ export default function InvestmentProducts() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="bg-yellow-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-yellow-600" />
+              <div className="bg-primary p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">15,000+</h3>
               <p className="text-slate-600">Active Investors</p>
@@ -419,18 +419,18 @@ export default function InvestmentProducts() {
                           product.risk === "low"
                             ? "bg-green-100 text-green-800"
                             : product.risk === "medium"
-                            ? "bg-yellow-100 text-yellow-800"
+                            ? "bg-primary text-primary"
                             : "bg-red-100 text-red-800"
                         }
                       >
                         {product.risk.toUpperCase()} RISK
                       </Badge>
                       <div className="flex items-center text-sm text-slate-500">
-                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
+                        <Star className="h-4 w-4 fill-primary text-primary mr-1" />
                         {product.popularity}
                       </div>
                     </div>
-                    <CardTitle className="text-xl group-hover:text-yellow-600 transition-colors">
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
                       {product.title}
                     </CardTitle>
                     <CardDescription>{product.description}</CardDescription>
@@ -481,7 +481,7 @@ export default function InvestmentProducts() {
                       <ul className="mt-2 space-y-1">
                         {product.features.slice(0, 3).map((feature, index) => (
                           <li key={index} className="flex items-center text-sm">
-                            <div className="h-1.5 w-1.5 rounded-full bg-yellow-600 mr-2"></div>
+                            <div className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></div>
                             {feature}
                           </li>
                         ))}
@@ -590,7 +590,7 @@ export default function InvestmentProducts() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-600 to-amber-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary to-primary/30 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -601,7 +601,7 @@ export default function InvestmentProducts() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Start Investing?
             </h2>
-            <p className="text-yellow-100 max-w-2xl mx-auto mb-8">
+            <p className="text-zinc-900 max-w-2xl mx-auto mb-8">
               Join thousands of investors who are building wealth with our
               carefully curated investment products. Our experts are ready to
               guide you through your investment journey.
@@ -609,7 +609,7 @@ export default function InvestmentProducts() {
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button
                 size="lg"
-                className="bg-white text-yellow-700 hover:bg-yellow-50"
+                className="bg-white text-primary hover:bg-primary/50"
               >
                 Open An Account
               </Button>

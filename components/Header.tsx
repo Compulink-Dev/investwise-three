@@ -101,22 +101,46 @@ const Header = () => {
       ],
     },
     {
-      id: "protecting-investment",
-      title: "PROTECTING YOUR INVESTMENT",
-      icon: <Shield className="h-4 w-4" />,
+      id: "investment products",
+      title: "INVESTMENT PRODUCTS",
+      href: "#investment-products",
       items: [
-        {
-          title: "Types of Investment Fraud",
-          href: "/types-of-investment-fraud",
-        },
-        {
-          title: "What you can do to avoid Investment Fraud",
-          href: "/what-you-can-do-to-avoid-investment-fraud",
-        },
-        {
-          title: "Red Flags for Investment Fraud",
-          href: "/red-flags-for-investment-fraud",
-        },
+        { title: "Products", href: "/investment-products" },
+        { title: "Shares", href: "/products/shares" },
+        { title: "Bonds", href: "/products/bonds" },
+        { title: "Collective Investment Schemes", href: "/products/cis" },
+      ],
+    },
+    // {
+    //   id: "protecting-investment",
+    //   title: "PROTECTING YOUR INVESTMENT",
+    //   icon: <Shield className="h-4 w-4" />,
+    //   items: [
+    //     {
+    //       title: "Types of Investment Fraud",
+    //       href: "/types-of-investment-fraud",
+    //     },
+    //     {
+    //       title: "What you can do to avoid Investment Fraud",
+    //       href: "/what-you-can-do-to-avoid-investment-fraud",
+    //     },
+    //     {
+    //       title: "Red Flags for Investment Fraud",
+    //       href: "/red-flags-for-investment-fraud",
+    //     },
+    //   ],
+    // },
+    {
+      title: "MEDIA CORNER",
+      href: "#media-corner",
+      items: [
+        { title: "Media Corner", href: "/media-corner" },
+        { title: "Latest News", href: "/media/news" },
+        { title: "Upcoming Events", href: "/media/events" },
+        { title: "Publications", href: "/media/publications" },
+        { title: "Speeches & Presentations", href: "/media/speeches" },
+        { title: "Testimonials", href: "/media/testimonials" },
+        { title: "Media Gallery", href: "/media/gallery" },
       ],
     },
     {

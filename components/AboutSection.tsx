@@ -32,7 +32,7 @@ export function AboutSection() {
             className="md:w-1/2"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              About <span className="text-yellow-600">InvestWise Zimbabwe</span>
+              About <span className="text-primary/60">InvestWise Zimbabwe</span>
             </h2>
             <p className="text-lg text-gray-700 mb-6">
               We are dedicated to empowering Zimbabweans with financial
@@ -67,7 +67,7 @@ export function AboutSection() {
               viewport={{ once: true }}
               className="mt-8"
             >
-              <Button className="bg-yellow-600 hover:bg-yellow-700">
+              <Button className="bg-primary/60 hover:bg-primary/70">
                 Our Story
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -81,15 +81,15 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="md:w-1/2 grid grid-cols-2 gap-4"
           >
-            <div className="bg-yellow-100 p-6 rounded-2xl h-48 flex items-end">
+            <div className="bg-primary/10 p-6 rounded-2xl h-48 flex items-end">
               <div>
-                <Target className="h-10 w-10 text-yellow-600 mb-4" />
+                <Target className="h-10 w-10 text-primary/60 mb-4" />
                 <h3 className="font-semibold">Clear Objectives</h3>
               </div>
             </div>
-            <div className="bg-yellow-100 p-6 rounded-2xl h-48 flex items-end mt-8">
+            <div className="bg-primary/10 p-6 rounded-2xl h-48 flex items-end mt-8">
               <div>
-                <Lightbulb className="h-10 w-10 text-yellow-600 mb-4" />
+                <Lightbulb className="h-10 w-10 text-primary/60 mb-4" />
                 <h3 className="font-semibold">Smart Strategies</h3>
               </div>
             </div>

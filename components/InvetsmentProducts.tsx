@@ -25,8 +25,8 @@ export function InvestmentProducts() {
       name: "Private Equity",
       description:
         "Access to high-value investment opportunities in growing businesses.",
-      icon: <BarChart3 className="h-10 w-10 text-yellow-600" />,
-      color: "bg-yellow-50",
+      icon: <BarChart3 className="h-10 w-10 text-primary/60" />,
+      color: "bg-primary-50",
     },
     {
       name: "Venture Capital",
@@ -45,8 +45,8 @@ export function InvestmentProducts() {
     {
       name: "Asset Management",
       description: "Professional management of diverse investment portfolios.",
-      icon: <Shield className="h-10 w-10 text-yellow-600" />,
-      color: "bg-yellow-50",
+      icon: <Shield className="h-10 w-10 text-primary-600" />,
+      color: "bg-primary-50",
     },
     {
       name: "Retirement Planning",
@@ -101,7 +101,7 @@ export function InvestmentProducts() {
               <p className="text-gray-600 mb-6">{product.description}</p>
               <Button
                 variant="link"
-                className="p-0 text-yellow-600 hover:text-yellow-800"
+                className="p-0 text-primary-600 hover:text-primary-800"
               >
                 Learn more
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -117,7 +117,7 @@ export function InvestmentProducts() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button size="lg" className="bg-yellow-600 hover:bg-yellow-700">
+          <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
             Explore All Products
           </Button>
         </motion.div>
