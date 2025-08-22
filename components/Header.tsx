@@ -40,12 +40,12 @@ const Header = () => {
           href: "/investment-basics/being-financially-literate",
         },
         {
-          title: "Why should you invest?",
-          href: "/investment-basics/why-should-you-invest",
+          title: "Investment Products",
+          href: "/investment-products",
         },
         {
-          title: "When should you invest?",
-          href: "/investment-basics/when-should-you-invest",
+          title: "Media Center",
+          href: "/media-center",
         },
         {
           title: "How much should you invest?",
